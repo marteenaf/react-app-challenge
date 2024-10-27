@@ -6,6 +6,11 @@ type TableProps = {
     headers: TableHeader[]
 }
 
+/**
+ * Reusable component to display data in a table
+ * @param {TableProps} props Props for the table include the data and specified headers
+ * @returns {JSX.Element}
+ */
 function Table({ data, headers }: TableProps) {
     return (
         <table style={styles}>

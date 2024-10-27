@@ -1,3 +1,6 @@
+/**
+ * @type Structure expected for user
+ */
 type User = {
     username: string,
     password: string

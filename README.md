@@ -1,3 +1,24 @@
+# React App Challenge
+
+This project displays a simple app with:
+- A login page
+- A dashboard page displaying local data
+
+Project was created using Vite create app command
+
+> npm run dev
+
+## Folder Structure
+
+- **src/components:** 'dumb' components re-used across the app, contain no business logic -> each component is grouped in their own folder with associated style files
+- **src/features:** folder for grouping components by feature -> each component is grouped in their own folder with associated style files
+- **src/layouts:** folder for components that provide page layouts
+- **src/pages:** folder for page components -> generally correspond to routes or are imported directly in App.tsx
+- **src/styles:** folders for files with global styles
+- **src/types:** folder for storing types used across the app
+- **src/utilities:** folder for additional functions that can be reused across the app
+
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.

@@ -18,6 +18,13 @@ type Margins = {
     right: number
 }
 
+/**
+ * Custom hook used to fit the graph to the svg element and to resize the graph when the screen is resized
+ * 
+ * @param {SVGSVGElement} svg 
+ * @param {Margins} margins 
+ * @returns {object}
+ */
 function useResizeEffect(svg: SVGSVGElement | null, margins: Margins) {
     const [size, setSize] = useState({ width: 400, height: 30 });
     useLayoutEffect(() => {
@@ -33,6 +40,11 @@ function useResizeEffect(svg: SVGSVGElement | null, margins: Margins) {
     return size;
 }
 
+/**
+ * Component to render a simple bar chart given some data
+ * @param {BarChartProps} param0 Props for the bar chart include the data, an id and some margin and colour properties that are optional
+ * @returns {JSX.Element}
+ */
 function BarChart({ data, id, marginBottom = 45, marginTop = 10, marginLeft = 20, marginRight = 10, colour = 'var(--tertiary)' }: BarChartProps) {
 
     const graphRef = useRef<SVGSVGElement>(null);

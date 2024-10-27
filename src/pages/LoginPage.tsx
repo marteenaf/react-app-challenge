@@ -2,6 +2,12 @@ import { useState } from "react";
 import styles from './LoginPage.module.css';
 import User from "../types/User";
 
+/**
+ * A component that renders the Login page
+ * Contains state for the current user
+ * Simple enough page to be contained in a single component
+ * @returns {JSX.Element}
+ */
 function LoginPage() {
 
     const [user, setUser] = useState<User>({ username: '', password: '' });
@@ -12,7 +18,6 @@ function LoginPage() {
             <p>Welcome to dashboard pages. May I take your username and password?</p>
             <form action="/dashboard" className={`${styles['form-wrapper']} card`}>
                 <div className={styles['input-wrapper']}>
-                    {/* <label htmlFor='login-username'><h5>Username</h5></label> */}
                     <input type="text"
                         id='login-username'
                         autoComplete='on'
@@ -23,7 +28,6 @@ function LoginPage() {
                         onInput={(e) => { setUser((prev: User) => { return { ...prev, ...{ username: (e.target as HTMLInputElement).value } } }) }}></input>
                 </div>
                 <div className={styles['input-wrapper']}>
-                    {/* <label htmlFor='login-password'><h5>Password</h5></label> */}
                     <input type="password"
                         id='login-password'
                         autoComplete='off'
