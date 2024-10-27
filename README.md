@@ -6,6 +6,9 @@ This project displays a simple app with:
 
 Project was created using Vite create app command
 
+The app can be run locally on port 5173.
+
+> npm install
 > npm run dev
 
 ## Folder Structure
