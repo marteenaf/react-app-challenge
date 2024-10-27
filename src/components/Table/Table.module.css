@@ -1,0 +1,26 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    background: var(--tertiary);
+    color: var(--on-primary);
+    padding: 0.25rem 0.5rem;
+    text-align: left;
+    border-bottom: 2px solid var(--on-surface);
+}
+
+td {
+    text-align: left;
+    padding: 2px 4px;
+}
+
+tr {
+    border-bottom: 1px solid var(--on-surface);
+}
+
+tr:hover {
+    background-color: var(--primary);
+    color: var(--on-primary);
+}

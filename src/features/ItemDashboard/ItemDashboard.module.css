@@ -1,0 +1,29 @@
+.item-dashboard-page {
+    padding: 1rem;
+    max-width: 1000px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.data-wrapper {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.data-card {
+    width: 50%;
+}
+
+@media screen and (width<=500px) {
+    .data-wrapper {
+        flex-direction: column;
+    }
+
+    .data-card {
+        width: 100%;
+    }
+}
